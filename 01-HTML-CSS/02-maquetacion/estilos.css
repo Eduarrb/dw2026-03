@@ -8,45 +8,35 @@ nav {
     text-align: center;
     color: peru;
 }
-/* 768PX - 2px = 766px */
-section {
-    border: 1px solid #3498db;
-}
 
 /* METODOLOGIA BEM: BLOCK ELEMENT MODIFIER */
 /* DON'T REPEAT YOURSELF */
 section {
-    /* article {
-        border: 1px solid #e74c3c;
-        text-align: center;
-        color: #e74c3c;
-    }
-    aside {
-        border: 1px solid #e74c3c;
-        text-align: center;
-        color: #e74c3c;
-    } */
+    border: 1px solid #3498db;
+    display: flex;
+    flex-wrap: wrap;
     article,
     aside {
         border: 3px solid #e74c3c;
         text-align: center;
         color: #e74c3c;
-        display: inline-block;
+        height: 100px;
+        box-sizing: border-box;
     }
 
-    /* 768PX */
     article {
-        width: calc(70% - 6px);
-        /* width: 500px; */
-        /* 3px Left y 3px Right */
-        /* 506px */
-        /* width: 494px; */
+        width: 70%;
     }
 
     aside {
-        width: calc(30% - 6px);
-        /* width: 268px; */
-        /* width: 260px; */
+        width: 30%;
     }
+}
+
+footer {
+    border: 3px solid #1abc9c;
+    text-align: center;
+    color: #1abc9c;
+    height: 50px;
 }
 

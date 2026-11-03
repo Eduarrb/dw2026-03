@@ -1,0 +1,44 @@
+/* RESET */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* font-family: "Fraunces", serif; */
+/* font-family: "Manrope", sans-serif; */
+
+/* CONSTANTES */
+.color-primary {
+    color: #252a31;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f2ec;
+    /* #logo, div a {
+        color: #252a31;
+    } */
+    #logo {
+        font-family: "Fraunces", serif;
+        text-transform: uppercase;
+        font-size: 30px;
+        letter-spacing: 8px;
+    }
+    div {
+        a {
+            font-family: "Manrope", sans-serif;
+            border: 2px solid peru;
+            padding: 35px 15px 35px 15px;
+        }
+        /* a:not(:last-child) {
+            margin-right: 40px;
+        } */
+    }
+}
