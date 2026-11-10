@@ -17,6 +17,22 @@ a {
     color: #252a31;
 }
 
+.parrafo {
+    font-family: "Manrope", sans-serif;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    background-color: #ae5235;
+    font-family: "Fraunces", serif;
+    font-size: 25px;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
 /* NAV */
 nav {
     display: flex;
@@ -92,23 +108,106 @@ header {
         line-height: 65px; /* inter = -5px */
         color: #252a31;
     }
-    p {
-        font-family: "Manrope", sans-serif;
-        font-size: 25px;
-        margin-bottom: 50px;
-    }
-    a {
-        background-color: #ae5235;
-        font-family: "Fraunces", serif;
-        font-size: 25px;
-        color: white;
-        padding: 15px 30px;
-        border-radius: 10px;
-        display: inline-block;
-    }
 }
 
 /* SECTION */
 section {
     padding: 20px 70px;
+    display: flex;
+    gap: 50px;
+    background-color: #f9f2ec;
+    /* background: TIPO: image?, color?, clip?, VALOR: positon, size, color, ; */
+    .imgBox {
+        width: 40%;
+        border-radius: 20px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    .contentBox {
+        width: 60%;
+        h3 {
+            font-family: "Fraunces", serif;
+            font-size: 50px;
+            font-weight: 400;
+        }
+    }
 }
+
+/* FOOTER */
+footer {
+    background-color: #212a34;
+    display: flex;
+    padding: 20px 80px;
+    justify-content: space-between;
+    align-items: center;
+    div {
+        display: flex;
+        align-items: center;
+        column-gap: 60px;
+        a, p {
+            color: #fbf8f4;
+            font-family: "Manrope", sans-serif;
+        }
+        .logo-footer {
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            font-family: "Fraunces", serif;
+        }
+    }
+}
+
+/* BREAKPOINT - MEADIA QUERIES */
+/*
+    desktop first
+    mobile first
+*/
+@media only screen and (max-width: 1460px) {
+    section {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    nav {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    section {
+        flex-direction: column;
+        gap: 0;
+        .imgBox, .contentBox {
+            width: 80%;
+        }
+        .contentBox {
+            text-align: center;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        article {
+            text-align: center;
+        }
+    }
+    footer {
+        div {
+            flex-direction: column;
+            row-gap: 10px;
+        }
+    }
+}
+
+
+
